@@ -1,38 +1,83 @@
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrap {
+  border: 1px solid black;
+  max-width: 1200px;
+  width: 1200px;
+  min-height: 800px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 20px;
+  border: 1px solid black;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+form {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 50px;
+  height: 100px;
+  align-items: center;
+  border-radius: 10px;
+  background-color: wheat;
+}
+section {
+  margin-left: 40px;
+}
+article {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  border: 4px solid skyblue;
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+  padding: 20px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+.wrap-cards {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+input {
+  border-radius: 10px;
+  border: 1px solid palegoldenrod;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-box {
+  display: flex;
+}
+.remove-btn {
+  border-radius: 10px;
+  width: 80px;
+  height: 30px;
+  background-color: antiquewhite;
+  border: 0;
+  margin-right: 10px;
+}
+.move-btn {
+  border-radius: 10px;
+  width: 80px;
+  height: 30px;
+  background-color: blanchedalmond;
+  border: 0;
+  margin-right: 10px;
+}
+.add-btn {
+  width: 150px;
+  height: 40px;
+}
+.add-btn:hover {
+  border: 1px solid brown;
+  background-color: burlywood;
 }
